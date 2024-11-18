@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login DIO</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e192d;
+            color: #ffffff;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #151515;
+            justify-content: flex-start; /* Garante que tudo fique à esquerda */
+        }
+
+        header img {
+            height: 50px;
+            margin-right: 30px; /* Espaço entre a imagem e o menu */
+        }
+
+        header nav {
+            display: flex; /* Exibe os links de navegação horizontalmente */
+        }
+
+        header nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .info {
+            max-width: 60%;
+        }
+
+        .info h1 {
+            font-size: 24px;
+        }
+
+        .info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info ul li {
+            margin: 10px 0;
+        }
+
+        .login {
+            background-color: #ffffff;
+            color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        .login h2 {
+            color: #772dae;
+        }
+
+        .login form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login form input {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login form button {
+            padding: 10px;
+            background-color: #4a3b9b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .esqueci_criar{
+            color: #151515;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+        <img src="https://hermes.dio.me/assets/logos/diome-white.png" alt="Logo DIO">
+        </a>
+        <nav>
+            <a href="#">Carreiras</a>
+            <a href="#">Bootcamps</a>
+            <a href="#">Projetos</a>
+            <a href="#">Comunidade</a>
+            <a href="#">Planos</a>
+            <a href="#">Para Empresas</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="info">
+            <h1>Domine as tecnologias utilizadas pelas empresas mais inovadoras</h1>
+            <ul>
+                <li>+1.750 cursos, bootcamps, projetos e formações nas carreiras de back-end, front-end, mobile, games, data, inteligência artificial & cloud;</li>
+                <li>Conquiste certificados reconhecidos por grandes empresas de tecnologia em Java, Python, .NET, C#, JavaScript, Node.js, React, Angular, entre mais de 500 tecnologias;</li>
+                <li>+10.000 pessoas contratadas por grandes empresas no Brasil e exterior.</li>
+            </ul>
+        </div>
+
+        <div class="login">
+            <h2>Já tem cadastro?</h2>
+            <form>
+                <input type="email" placeholder="Endereço de e-mail">
+                <input type="password" placeholder="Senha">
+                <button style="background-color: #772dae"; type="submit">Entrar</button>
+            </form>
+            <a class="esqueci_criar" href="#" >Esqueci minha senha</a> |
+            <a class="esqueci_criar" href="#" >Criar conta</a>
+        </div>
+    </main>
+</body>
+</html>
